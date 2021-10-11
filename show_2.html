@@ -23,7 +23,7 @@
                 
                 <ul class="menu">
                     <li><a href="index.html">Главная</a></li>
-                    <li class="selected"><a href="films.html">Фильмы</a></li>
+                    <li><a href="films.html">Фильмы</a></li>
                     <li><a href="#">Сериалы</a></li>
                     <li><a href="rating.html">Рейтинг фильмов</a></li>
                     <li><a href="contact.html">Контакты</a></li>
@@ -48,6 +48,7 @@
                 <div class="sidebar">
                     <h2>Вход</h2>
                     <form method="post" action="#" id="lo0gin">
+        
                         <input type="text" name="login_field" placeholder="логин">
                         <input type="password" name="password_field" placeholder="пароль">
                         <input type="submit" class="btn" value="Вход">
@@ -69,7 +70,7 @@
                     <h2>Рейтинг фильмов</h2>
                     <ul>
                         <li><a href="show_1.html">Интерстеллар</a><span class="rating_sidebar">8.1</span></li>
-                        <li><a href="show_2.html">Матрица</a><span class="rating_sidebar">8.0</span></li>
+                        <li class="selected"><a href="show_2.html">Матрица</a><span class="rating_sidebar">8.0</span></li>
                         <li><a href="#">Безумный макс</a><span class="rating_sidebar">7.5</span></li>
                         <li><a href="#">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
                     </ul>
@@ -79,27 +80,18 @@
 
             <div class="content">
 
-                <div class="info_film">
-                    <img src="./images/inter.png">
-                    Когда засуха приводит человечество к продовольственному уризису, коллектив 
-                    исследователей и учёныйх отправляеться сквозь червоточину (которая 
-                    предположительно соединяеть области пространства-времени через большое
-                    расстояние) в путишествии, чтобы превзойти прежние ограничения для
-                    космических путишествий человека и переселить человечество на другую планету.
-                    <div class="button"><a href="show_1.html">Смотреть</a></div>
-                </div>
+                <h1>Матрица</h1>
 
-                <div class="info_film">
-                    <img src="./images/max.png">
-                    Когда засуха приводит человечество к продовольственному уризису, коллектив 
-                    исследователей и учёныйх отправляеться сквозь червоточину (которая 
-                    предположительно соединяеть области пространства-времени через большое
-                    расстояние) в путишествии, чтобы превзойти прежние ограничения для
-                    космических путишествий человека и переселить человечество на другую планету.
-                    <div class="button"><a href="#">Смотреть</a></div>
-                </div>
+                <iframe src="https://www.youtube.com/embed/YihPA42fdQ8" frameborder="0" width="560" height="315" allowfullscreen></iframe>
 
-                <div class="info_film">
+                <div class="info_film_page">
+                    <span class="label">рейтинг</span><span class="value">8.0 / 10</span>
+                    <span class="label">год:</span><span class="value">1999</span>
+                    <span class="label">режиссер</span><span class="value">Сёстры Вачёвски</span>
+                </div>
+                <hr>
+                <h2>Описание Матрицы</h2>
+                <div class="descriptions_film">
                     <img src="./images/matrix.png">
                     Рядовой сотрудник крупной компании, программист Томас Андерсон странным образом чувствует зыбкость окружающей реальности. 
                     По ночам он ведет тайную жизнь хакера по имени Нео, на связь с которым однажды выходят таинственные люди. Они сообщают ему, 
@@ -111,21 +103,38 @@
                     Томас желает вернуться к обычной жизни и забыть обо всех происходивших с ним странностях, он выберет синюю таблетку. 
                     Томас решает узнать больше о «Матрице», и его жизнь полностью меняется. Теперь он – Нео, избранный, вырвавшийся из 
                     иллюзорного мира и примкнувший к группе людей, живущих в настоящей реальности и борющейся с машинами, 
-                    захватившими власть и заточившими людей в плен «Матрицы».
-                     <div class="button"><a href="show_2.html">Смотреть</a></div>
+                    захватившими власть и заточившими людей в плен «Матрицы». 
+                </div>
+            
+                <hr>
+                <h2>Отзывы о Матрице</h2>
+
+                <div class="reviews">
+                    <div class="review_name">
+                        Олег
+                    </div>
+                    <div class="review_text">
+                        Зашибенный фильм, не раз пересматривал!
+                    </div>
                 </div>
 
-                <div class="info_film">
-                    <img src="./images/cloud.png">
-                    Когда засуха приводит человечество к продовольственному уризису, коллектив 
-                    исследователей и учёныйх отправляеться сквозь червоточину (которая 
-                    предположительно соединяеть области пространства-времени через большое
-                    расстояние) в путишествии, чтобы превзойти прежние ограничения для
-                    космических путишествий человека и переселить человечество на другую планету.
-                    <div class="button"><a href="#">Смотреть</a></div>
+                <div class="reviews">
+                    <div class="review_name">
+                        Юрас
+                    </div>
+                    <div class="review_text">
+                        Считаю шедевром киноиндустрии, ничего лучше не существеут.
+                    </div>
                 </div>
 
-             </div>
+                <div class="send">
+                    <form action="">
+                        <input type="text" name="review_name" placeholder="Ваше имя">
+                        <textarea name="rewiew_text"></textarea>
+                        <input type="submit" class="btn" value="Отправить">
+                    </form>
+                </div>
+            </div>
                 
         </div>
 
