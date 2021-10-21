@@ -2,81 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Контакты</title>
-    <meta name="discription" content="Кинобаза - это портал о кино">
-    <meta name="keywords" content="фильмы, фильмы онлайн, hd">
+    <title>Главная страница</title>
+    <meta name="description" content="КиноБаза - это портал о кино" />
+    <meta name="keywords" content="фильмы, фильмы онлайн, hd" />
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    
-    <div class="main">
 
-        <div class="header">
+    <main>
+       
+        <header>
             <div class="logo">
-                <div class="lofo_text">
+                <div class="logo_text">
                     <h1><a href="index.html">КиноБаза</a></h1>
                     <h2>Кино - наша страсть!</h2>
                 </div>
             </div>
-
-            <div class="manubar">
-                
-                <ul class="menu">
-                    <li><a href="index.html">Главная</a></li>
+           
+            <div class="menubar">
+               
+                <menu>
+                    <li class="selected"><a href="index.html">Главная</a></li>  
                     <li><a href="films.html">Фильмы</a></li>
                     <li><a href="#">Сериалы</a></li>
                     <li><a href="rating.html">Рейтинг фильмов</a></li>
                     <li><a href="contact.html">Контакты</a></li>
-                </ul>
+                </menu>
 
             </div>
 
-        </div>
+        </header>
 
+           
         <div class="site_content">
 
-            <div class="sidebar_container">
-        
+            <aside class="sidebar_container">
+               
                 <div class="sidebar">
                     <h2>Поиск</h2>
-                    <form method="post" action="#" id="search_form">
-                        <input type="search" name="login_field" placeholder="Ваш запрос">
-                        <input type="submit" class="btn" value="Найти">
+                    <form method="post" action="#" id="search_form" >
+                        <input type="search" name="search_field" placeholder="ваш запрос" />
+                        <input type="submit" class="btn" value="найти" />
                     </form>
                 </div>
-        
+
                 <div class="sidebar">
                     <h2>Вход</h2>
-                    <form method="post" action="#" id="lo0gin">
-        
-                        <input type="text" name="login_field" placeholder="логин">
-                        <input type="password" name="password_field" placeholder="пароль">
-                        <input type="submit" class="btn" value="Вход">
-                        <div>
-                            <span><a href="#">Забыли пароль?</a></span> | <span><a href="#">Регистрация</a></span>
-                        </div> 
-        
+                    <form method="post" action="#" id="login">
+                       
+                        <input type="text" name="login_field" placeholder="логин" />
+                        <input type="password" name="password_field" placeholder="пароль" />
+                        <input type="submit" class="btn" value="вход" />
+                        <div class="lables_passreg_text">
+                            <span><a href="#">забыли пароль?</a></span> | <span><a href="#">регистрация</a></span>
+                        </div>
+
                     </form>
                 </div>
-                    
+
                 <div class="sidebar">
                     <h2>Новости</h2>
                     <span>31.02.2018</span>
                     <p>Мы запустили расширенный поиск</p>
-                    <a href="#">Читать</a>
+                    <a href="#">читать</a>
                 </div>
-        
+
                 <div class="sidebar">
                     <h2>Рейтинг фильмов</h2>
-                    <ul>
+                    <menu>
                         <li><a href="show_1.html">Интерстеллар</a><span class="rating_sidebar">8.1</span></li>
                         <li class="selected"><a href="show_2.html">Матрица</a><span class="rating_sidebar">8.0</span></li>
-                        <li><a href="#">Безумный макс</a><span class="rating_sidebar">7.5</span></li>
-                        <li><a href="#">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
-                    </ul>
+                        <li><a href="show_3.html">Безумный макс</a><span class="rating_sidebar">7.5</span></li>
+                        <li><a href="show_4.html">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
+                    </menu>
                 </div>
-                    
-            </div>
+
+            </aside>
 
             <div class="content">
 
@@ -85,14 +86,14 @@
                 <iframe src="https://www.youtube.com/embed/YihPA42fdQ8" frameborder="0" width="560" height="315" allowfullscreen></iframe>
 
                 <div class="info_film_page">
-                    <span class="label">рейтинг</span><span class="value">8.0 / 10</span>
-                    <span class="label">год:</span><span class="value">1999</span>
-                    <span class="label">режиссер</span><span class="value">Сёстры Вачёвски</span>
+                    <span class="label">Рейтинг:</span><span class="value">8.0 / 10</span><br>
+                    <span class="label">Год:</span><span class="value">1999</span><br>
+                    <span class="label">Режиссер:</span><span class="value">Сёстры Вачёвски</span><br>
                 </div>
                 <hr>
                 <h2>Описание Матрицы</h2>
                 <div class="descriptions_film">
-                    <img src="./images/matrix.png">
+                    <img class="txtimg" src="./images/matrix.png">
                     Рядовой сотрудник крупной компании, программист Томас Андерсон странным образом чувствует зыбкость окружающей реальности. 
                     По ночам он ведет тайную жизнь хакера по имени Нео, на связь с которым однажды выходят таинственные люди. Они сообщают ему, 
                     что тот «увяз в Матрице», но не объясняют, что это значит. Вскоре на Томаса выходят странные люди в костюмах, 
@@ -138,16 +139,19 @@
                 
         </div>
 
-    <div class="footer">
-        <p><a href="index.html">Главная</a>
-            <a href="films.html">Фильмы</a>
-            <a href="#">Сериалы</a>
-            <a href="rating.html">Рейтинг</a>
+
+    <footer>
+        <p>
+            <a href="index.html">Главная</a> |
+            <a href="films.html">Фильмы</a> |
+            <a href="#">Сериалы</a> |
+            <a href="rating.html">Рейтинг фильмов</a> |
             <a href="contact.html">Контакты</a>
         </p>
         <p>kinopoisk.ru</p>
-    <div>
+    </footer>
 
-    </div>    
+    </main>
+   
 </body>
 </html>
