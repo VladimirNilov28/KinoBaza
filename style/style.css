@@ -24,7 +24,7 @@ input[type="text"], input[type="password"], input[type="search"] {
 input, textarea {
     outline: none;
     border: none;
-    border: solid 1px #f2f2f2;
+    border: solid 1.5px #f2f2f2;
 }
 
 h1, h2 {
@@ -41,21 +41,21 @@ h2 {
 a, a:hover {
     outline: none;
     text-decoration: none;
-    color: #136cb2;
+    color: rgb(177, 122, 253);
 }
 
-menu {
+ul {
     margin: 2px 0 22px 17px;
 }
 
-menu li {
+ul li {
     margin: 0 0 6px 0;
     padding: 0 0 4px 5px;
     line-height: 1.5em;
 }
 
 header {
-    background-color: darkslateblue;
+    background-color: rgb(179, 122, 255);
     height: 177px;
     font-size: 0.8em;
     margin-left: 0px;
@@ -81,7 +81,7 @@ header {
 
 .logo_text h1, .logo_text h1 a, .logo_text h1 a:hover {
     padding: 22px 0 0 0;
-    color: #fff;
+    color: rgb(125, 30, 255);
     letter-spacing: 0.1em;
     text-decoration: none;
 }
@@ -97,38 +97,38 @@ header {
     height: 46px;
 }
 
-menu {
+ul.menu {
     float: right;
 }
 
-menu li {
+ul.menu li {
     float: left; 
-    padding: 0 0 0 9px;
+    padding: 0 0 0 0px;
     list-style: none;
     margin: 1px 2px 0 0;
 }
 
-menu li a {
+ul.menu li a {
     font: normal 100% 'trebuchet ms', sans-serif;
     display: block;
     height: 20px;
-    margin-right: 40px;
-    padding: 6px 35px 5px 28px;
-    /* color: #fff; */
+    padding: 0px 20px 20px 0px;
+    color: #fff;
     text-decoration: none;
+    float: left;
 }
 
-menu li.selected a {
+ul.menu li.selected a {
     color: #136cb2;
 }
 
-menu li a:hover {
+ul.menu li a:hover {
     color: #136cb2;
 }
 
 
 hr {
-    border: solid 1px #f3f3f3;
+    border: solid 1px rgb(222, 200, 250);
     margin-top: 6%;
     margin-bottom: 6%;
 }
@@ -151,12 +151,12 @@ hr {
     padding: 5%;
     margin: 0 0 16px 0;
     border: solid 1px #fff;
-    background-color: #DFE8EC;
+    background-color: rgb(222, 200, 250);
 }
 
 .btn {
-    padding: 8px;
-    background-color: #DFE8EC;
+    padding: 6px;
+    background-color: #c5adff;
     cursor: pointer;
 }
 
@@ -346,7 +346,7 @@ footer {
     height: 100px;
     padding: 28px 0 5px 0;
     text-align: center;
-    background-color: darkslateblue;
+    background-color: rgb(222, 200, 250);
     color: #a8aa94;
     margin-left: 0px;
     margin-right: 0px;
